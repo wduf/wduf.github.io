@@ -17,6 +17,12 @@ body
 	background-color: #171717;
 }
 
+svg
+{
+	height: 100%;
+	width: 100%;
+}
+
 .navbar
 {
 	margin: 10px 20px;
@@ -123,7 +129,7 @@ body
 
 .introduce-me
 {
-	margin: 200px 50px 300px;
+	margin: 20vh 6% 30vh;
 	text-align: center;
 }
 
@@ -411,7 +417,7 @@ body
 .education-desc img
 {
 	width: 184px;
-	height: 184px;
+	height: auto;
 }
 
 .education-text
@@ -545,13 +551,14 @@ body
 
 	.projects-list
 	{
-		margin-top: 80px;
+		margin-top: 70px;
 	}
 
 	.project
 	{
 		text-align: center;
 		display: block;
+		margin-bottom: 70px;
 	}
 
 	.project-pic
@@ -642,7 +649,7 @@ body
 	.education-desc img
 	{
 		width: 100%;
-		height: max-content;
+		height: auto;
 	}
 }
 
@@ -682,6 +689,11 @@ body
 
 @media(max-width: 420px)
 {
+	.introduce-me span
+	{
+		font-size: 70px;
+	}
+
 	.skills-icons ul li
 	{
 		margin: 10px;

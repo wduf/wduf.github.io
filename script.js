@@ -25,7 +25,7 @@ function copyEmail()
 
 function openSourceCode()
 {
-	window.open("https://github.com/wduf/my-website");
+	window.open("https://github.com/wduf/wduf.github.io");
 }
 
 function openMenu()
@@ -33,6 +33,7 @@ function openMenu()
 	// disable scrolling
 	const body = document.getElementsByTagName("body")[0];
 	body.style.overflow = 'hidden';
+	body.style.touchAction = 'none';
 	// open menu
 	const menu = document.getElementById('mobile-side-menu');
 	menu.style.right = '0px';
@@ -43,6 +44,7 @@ function closeMenu()
 	// enable scrolling
 	const body = document.getElementsByTagName("body")[0];
 	body.style.overflow = 'visible';
+	body.style.touchAction = 'auto';
 	// close menu
 	const menu = document.getElementById('mobile-side-menu');
 	menu.style.right = '-300px';

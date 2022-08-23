@@ -1,5 +1,6 @@
 TODO:
-
+- fix safari bottom bar cutting off mobile side menu
+- fix hover not resetting on click mobile
 
 LATER:
 - go through everything and optimize/minimize
