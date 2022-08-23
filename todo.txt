@@ -1,0 +1,8 @@
+TODO:
+
+
+LATER:
+- go through everything and optimize/minimize
+- make sure things work with all browsers
+- arrow that brings you to top of page (MAKE ARROW CHANGE FROM BLACK TO WHITE ON HOVER)
+- make website public after everything is polished

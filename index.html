@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Will Dufault | Computer Science Student</title>
+		<meta name="viewport" content="with=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="style.css"/>
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"/>
+		<!-- data-aos -->
+		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<section id="intro">
+			<div class="navbar">
+				<div class="logo" data-aos="fade-in">
+					<a href="https://wduf.github.io">{<span class="logo-w">w</span><span class="logo-d">d</span>}</a>
+				</div>
+				<div class="navbar-links" data-aos="fade-in">
+					<ul>
+						<li>
+							<a href="#about">About</a>
+						</li>
+						<li>
+							<a href="#projects">Projects</a>
+						</li>
+						<li>
+							<a href="#skills">Skills</a>
+						</li>
+						<li>
+							<a href="#education">Education</a>
+						</li>
+						<li>
+							<a href="#contact">Contact</a>
+						</li>
+						<li>
+							<!-- target blank will work only if the browser settings allow for it -->
+							<a href="WillDufault_Resume_Internship_8-22.pdf">Resume</a>
+						</li>
+					</ul>
+				</div>
+				<div class="mobile-navbar-menu">
+					<div class="mobile-open-menu" onclick="openMenu()" data-aos="fade-in">
+						<iconify-icon class="open-menu" icon="gg:menu" width="40"></iconify-icon>
+					</div>
+					<div id="mobile-side-menu">
+						<div class="mobile-close-menu" onclick="closeMenu()">
+							<iconify-icon icon="ep:close-bold" width="40"></iconify-icon>
+						</div>
+						<div class="mobile-navbar-links">
+							<ul>
+								<li>
+									<a href="#about" onclick="closeMenu()">About</a>
+								</li>
+								<li>
+									<a href="#projects" onclick="closeMenu()">Projects</a>
+								</li>
+								<li>
+									<a href="#skills" onclick="closeMenu()">Skills</a>
+								</li>
+								<li>
+									<a href="#education" onclick="closeMenu()">Education</a>
+								</li>
+								<li>
+									<a href="#contact" onclick="closeMenu()">Contact</a>
+								</li>
+								<li>
+									<!-- target blank will work only if the browser settings allow for it -->
+									<a href="WillDufault_Resume_Internship_8-22.pdf" target="_blank">Resume</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="introduce-me">
+				<div class="big-name" data-aos="fade-up" data-aos-delay="200">
+					<span class="big-will">Will </span><span class="big-dufault">Dufault</span>
+				</div>
+				<p data-aos="fade-up" data-aos-delay="400">Aspiring software engineer.</p>
+			</div>
+		</section>
+		<div class="border">
+			<svg viewBox="0 0 50 1" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<polygon class="diag" points="0 0 0 50 50 1"/>
+			</svg>
+		</div>
+		<section id="about">
+			<h1 class="title" data-aos="fade-up">About</h1>
+			<div class="about-desc" data-aos="fade-up">
+				<img src="images/me.png" alt="Image of Me"/>
+				<p>
+					Hey! My name is Will Dufault and I'm a junior at Worcester Polytechnic Institute (WPI) studying computer science with an interest in 
+					software engineering. Growing up, I've always had a desire to optimize. Whether its looking up the hidden stats of karts in Mario Kart 
+					to create the best possible build, or spending hours watching slow-mo clips of Ray Allen and Klay Thompson shooting to perfect my own 
+					form, I've always found joy in eliminating inefficiencies anywhere that I can. This, along with my passion for programming and creating 
+					things, is what draws me to software engineering.
+					<br/><br/>
+					At WPI, I've taken many fast-paced and project-based courses that have allowed me to really hone in on these skills and learn how to 
+					apply them efficiently, all while working in a team and under low time constraints. This high-pressure environment will undoubtedly prepare 
+					me to enter the workforce with the skills necessary to thrive while working either individually or collaboratively. I am on track to 
+					graduate with a bachelor's in computer science with a minor in data science in May 2024.
+					<br/><br/>
+					During my free time, I like to work on my own coding projects, which can be found on my 
+					<a href="https://github.com/wduf?tab=repositories" target="_blank">GitHub</a>, do problems on 
+					<a href="https://leetcode.com/wduf" target="_blank">LeetCode</a>, hang out with friends, play basketball, and work out. 
+
+					<!-- todo: eventually add extra-curriculars like clubs and whatever else here -->
+
+				</p>
+			</div>
+		</section>
+		<div class="border">
+			<svg viewBox="0 0 50 1" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<polygon class="diag" points="0 0 0 1 50 0"/>
+			</svg>
+		</div>
+		<section id="projects">
+			<h1 class="title" data-aos="fade-up">Projects</h1>
+			<div class="projects-list">
+				<div class="project" data-aos="fade-up">
+					<img class="project-pic" src="images/nfl_combine_predictor.png" alt="Screenshot of NFL Combine Predictor"/>
+					<div class="project-desc">
+						<h1>NFL Combine Draft Predictor</h1>
+						<div class="made-with-list">
+							<h1>Made with:</h1>
+							<ul>
+								<li>
+									<img src="images/python_logo.png" alt="Image of Python Logo"/>
+								</li>
+							</ul>
+						</div>
+						<p>Using an NFL Combine <a href="https://www.kaggle.com/datasets/savvastj/nfl-combine-data" target="_blank">dataset</a> from 
+						Kaggle, a group of three classmates and I created several machine learning models and compared them to see which could most accurately 
+						predict what round players would get drafted based off of their performance in the Combine. We took multiple different approaches, 
+						including linear regression, random forest regression, and k-nearest neighbors, all combined with principal component analysis and a 
+						grid search to find the optimal hyperparameters.</p>
+					</div>
+				</div>
+				<div class="project" data-aos="fade-up">
+					<img class="project-pic" src="images/connect-four.png" alt="Screenshot of Connect Four in Terminal"/>
+					<div class="project-desc">
+						<h1>Connect Four with Smart Bot</h1>
+						<div class="made-with-list">
+							<h1>Made with:</h1>
+							<ul>
+								<li>
+									<img src="images/cpp_logo.png" alt="Image of C++ Logo"/>
+								</li>
+							</ul>
+						</div>
+						<p>I created a version of Connect Four that runs in the terminal and gives the option to play against another person or a smart bot. 
+							For every legal move, the bot checks in all seven directions and calculates a score for each column based off of whether 
+							it sees a streak in that and the opposite direction, an opportunity to block the opponent, or a win. It then selects the 
+							column with the highest score or picks a random one if there is a tie.
+						</p>
+					</div>
+				</div>
+				<div class="project" data-aos="fade-up">
+					<img class="project-pic" src="images/hp_reader.png" alt="Screenshot of Pokemon HP Bar Reader"/>
+					<div class="project-desc">
+						<h1>Pokemon HP Bar Reader</h1>
+						<div class="made-with-list">
+							<h1>Made with:</h1>
+							<ul>
+								<li>
+									<img src="images/python_logo.png" alt="Image of Python Logo"/>
+								</li>
+							</ul>
+						</div>
+						<p>I used to play a lot of Pokemon and sometimes, I would need to know the exact health of a pokemon. After a couple months of eyeballing 
+							and estimating health bars, I was tired of guessing. So, I decided to make a Python script that would do the work for me. The 
+							script pulls an image from your clipboard, converts it to an array of RGB values, recolors each value in the array, then 
+							calculates the health remaining as a percentage.
+						</p>
+					</div>
+				</div>
+				<div class="more-on-github" data-aos="fade-up">
+					<span class="more-on-github-text">The code for these and all of my other projects can be found on my</span>
+					<span class ="mobile-more-on-github-text">All code on my</span>
+					<button onclick="openGitHub()"><iconify-icon icon="akar-icons:github-fill" width="60" height="60"></iconify-icon>GitHub</button>
+					<span>.</span>
+				</div>
+			</div>
+		</section>
+		<div class="border">
+			<svg viewBox="0 0 50 1" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<polygon class="diag" points="0 0 0 1 50 1"/>
+			</svg>
+		</div>
+		<section id="skills">
+			<h1 class="title" data-aos="fade-up">Skills</h1>
+			<!-- todo: make each skill come in one at a time after one another, but all of them are triggered by the beginning of the div -->
+			<div class="skills-icons" data-aos="fade-up">
+				<ul>
+					<li>
+						<img src="images/c_logo.png" alt="Image of C Logo"/>
+						<h1>C</h1>
+					</li>
+					<li>
+						<img src="images/cpp_logo.png" alt="Image of C++ logo"/>
+						<h1>C++</h1>
+					</li>
+					<li>
+						<img src="images/cs_logo.png" alt="Image of C# logo"/>
+						<h1>C#</h1>
+					</li>
+					<li>
+						<img src="images/java_logo.png" alt="Image of Java logo"/>
+						<h1>Java</h1>
+					</li>
+					<li>
+						<img src="images/python_logo.png" alt="Image of Python logo"/>
+						<h1>Python</h1>
+					</li>
+					<li>
+						<img src="images/js_logo.png" alt="Image of JavaScript logo"/>
+						<h1>JavaScript</h1>
+					</li>
+					<li>
+						<img src="images/html_logo.png" alt="Image of HTML logo"/>
+						<h1>HTML</h1>
+					</li>
+					<li>
+						<img src="images/css_logo.png" alt="Image of CSS logo"/>
+						<h1>CSS</h1>
+					</li>
+					<li>
+						<img src="images/gdb_logo.png" alt="Image of GDB Logo"/>
+						<h1>GDB</h1>
+					</li>
+					<li>
+						<img src="images/valgrind_logo.png" alt="Image of Valgrind Logo"/>
+						<h1>Valgrind</h1>
+					</li>
+					<li>
+						<img src="images/git_logo.png" alt="Image of Git logo"/>
+						<h1>Git</h1>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<div class="border">
+			<svg viewBox="0 0 50 1" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<polygon class="diag" points="0 0 0 1 50 0"/>
+			</svg>
+		</div>
+		<section id="education">
+			<h1 class="title" data-aos="fade-up">Education</h1>
+			<div class="education-desc" data-aos="fade-up">
+				<img src="images/wpi_logo.png" alt="Image of WPI Logo"/>
+				<div class="education-text">
+					<!-- figure out how to format this without making it ugly -->
+					<h1>Worcester Polytechnic Institute</h1>
+					<h1>Bachelor of Science in Computer Science (2024)</h1>
+					<h2>GPA 3.92/4.0</h2>
+					<ul>
+						<li>
+							Major in computer science
+						</li>
+						<li>
+							Minor in data science
+						</li>
+						<li>
+							Dean's List every term so far
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<div class="border">
+			<svg viewBox="0 0 50 1" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<polygon class="diag" points="0 0 0 1 50 1"/>
+			</svg>
+		</div>
+		<section id="contact">
+			<h1 class="title" data-aos="fade-up">Contact</h1>
+			<div class="contact-info">
+				<ul>
+					<li data-aos="fade-left">
+						<div class="contact-card" onclick="openGitHub()">
+							<h1>GitHub</h1>
+							<iconify-icon icon="akar-icons:github-fill" width="100" height="100"></iconify-icon>
+							<h1>wduf</h1>
+						</div>
+					</li>
+					<li data-aos="fade-left" data-aos-delay="100">
+						<div class="contact-card" onclick="openLinkedIn()">
+							<h1>LinkedIn</h1>
+							<iconify-icon icon="akar-icons:linkedin-box-fill" width="100" height="100"></iconify-icon>
+							<h1>willdufault</h1>
+						</div>
+					</li>
+					<li data-aos="fade-left" data-aos-delay="200">
+						<div class="contact-card" onclick="copyEmail()"">
+							<h1>Email</h1>
+							<iconify-icon icon="fontisto:email" width="100" height="100"></iconify-icon>
+							<h1>wduf02@gmail.com</h1>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		</section>
+		<section id="footer">
+			<div class="footer-content">
+				<button class="source-code-button" onclick="openSourceCode()">Source Code</button>
+				<a class="top-page-button" href="#"><iconify-icon icon="fa-solid:caret-square-up" width="50"></iconify-icon></a>
+			</div>
+		</section>
+	</body>
+	<script type="text/javascript" src="script.js"></script>
+	<!-- iconify -->
+	<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+	<!-- data-aos -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	  AOS.init(
+		{
+			duration: "400", 
+			easing: "ease-out-sine"
+		});
+	</script>
+</html>
