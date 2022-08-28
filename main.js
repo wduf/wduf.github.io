@@ -25,7 +25,7 @@ function copyEmail()
 
 function openSourceCode()
 {
-	window.open("https://github.com/wduf/wduf.github.io");
+	window.open("https://github.com/wduf/wduf.github.io/tree/stable");
 }
 
 function openMenu()

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Will Dufault | Aspiring Software Engineer</title>
-		<meta name="viewport" content="with=device-width, initial-scale=1.0"/>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" href="style.css"/>
+		<title>Will Dufault | Aspiring Software Engineer</title>
 		<!-- google fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com"/>
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -12,10 +13,11 @@
 		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"/>
 	</head>
 	<body>
-		<section id="intro">
+		<section id="top">
 			<div class="navbar">
 				<div class="logo" data-aos="fade-in">
-					<a href="javascript:window.location.reload()">{<span class="logo-w">w</span><span class="logo-d">d</span>}</a>
+					<!-- everything i've read says href="" is legal, just refreshes the page -->
+					<a href="">{<span class="logo-w">w</span><span class="logo-d">d</span>}</a>
 				</div>
 				<div class="navbar-links" data-aos="fade-in">
 					<ul>
@@ -36,17 +38,17 @@
 						</li>
 						<li>
 							<!-- target blank will work only if the browser settings allow for it -->
-							<a href="WillDufault_Resume_Internship_8-22.pdf">Resume</a>
+							<a href="WillDufault_Resume_Internship_8-22.pdf" target="_blank">Resume</a>
 						</li>
 					</ul>
 				</div>
 				<div class="mobile-navbar-menu">
-					<div class="mobile-open-menu" onclick="openMenu()" data-aos="fade-in">
-						<iconify-icon class="open-menu" icon="gg:menu" width="40"></iconify-icon>
+					<div class="mobile-open-menu" data-aos="fade-in">
+						<span class="iconify" onclick="openMenu()" data-icon="gg:menu"></span>
 					</div>
 					<div id="mobile-side-menu">
-						<div class="mobile-close-menu" onclick="closeMenu()">
-							<iconify-icon icon="ep:close-bold" width="40"></iconify-icon>
+						<div class="mobile-close-menu">
+							<span class="iconify" onclick="closeMenu()" data-icon="ep:close-bold"></span>
 						</div>
 						<div class="mobile-navbar-links">
 							<ul>
@@ -88,9 +90,9 @@
 		</div>
 		<section id="about">
 			<h1 class="title" data-aos="fade-up">About</h1>
-			<div class="about-desc" data-aos="fade-up">
-				<img src="images/me.png" alt="Image of Me"/>
-				<p>
+			<div class="about-desc-wrapper" data-aos="fade-up">
+				<img class="about-pic" src="images/me.png" alt="Image of Me"/>
+				<p class="about-desc">
 					Hi! My name is Will Dufault and I'm a junior at Worcester Polytechnic Institute (WPI) studying computer science with an interest in 
 					software engineering. Growing up, I've always had a desire to optimize. Whether it's looking up hidden stats in Mario Kart to create 
 					the best possible build, or spending hours watching slow-mo clips of Ray Allen and Klay Thompson shooting to perfect my own form, 
@@ -98,13 +100,14 @@
 					building things, is what draws me to software engineering.
 					<br/><br/>
 					At WPI, I've taken many fast-paced and project-based courses that have allowed me to hone in on these skills and learn how to apply 
-					them effectively, all while working in a team and under low time constraints. This high-pressure environment will undoubtedly prepare 
-					me to enter the workforce with the skills necessary to thrive while working either individually or collaboratively. I am on track to 
-					graduate with a bachelor's in computer science and a minor in data science in May 2024.
+					them effectively, all while working in a team and/or under low time constraints. This high-pressure environment will undoubtedly 
+					prepare	me to enter the workforce with the skills necessary to thrive while working either individually or collaboratively. I am on 
+					track to graduate with a bachelor's in computer science and a minor in data science in May 2024.
 					<br/><br/>
 					During my free time, I like to work on my own coding projects, which can be found on my 
 					<a href="https://github.com/wduf?tab=repositories" target="_blank">GitHub</a>, do problems on 
-					<a href="https://leetcode.com/wduf" target="_blank">LeetCode</a>, hang out with friends, play basketball, and work out. 
+					<a href="https://leetcode.com/wduf" target="_blank">LeetCode</a>, hang out with friends, play basketball, and work out. I also work 
+					part-time at the Home Depot in Worcester.
 
 					<!-- todo: eventually add extra-curriculars like clubs and whatever else here -->
 
@@ -150,10 +153,10 @@
 								</li>
 							</ul>
 						</div>
-						<p>I created a version of Connect Four that runs in the terminal and gives the option to play against another person or a smart bot. 
-							For every legal move, the bot checks in all seven directions and calculates a score for each column based off of whether 
-							it sees a streak in that and the opposite direction, an opportunity to block the opponent, or a win. It then selects the 
-							column with the highest score or picks a random one if there is a tie.
+						<p>I created a version of Connect Four that runs in the Windows terminal and gives the option to play against another person or a 
+							smart bot. For every legal move, the bot checks in all seven directions and calculates a score for each column based off of 
+							whether it sees a streak in that and the opposite direction, an opportunity to block the opponent, or a win. It then selects 
+							the column with the highest score or picks a random one if there is a tie.
 						</p>
 					</div>
 				</div>
@@ -179,7 +182,7 @@
 				<div class="more-on-github" data-aos="fade-up">
 					<span class="more-on-github-text">The code for these and all of my other projects can be found on my</span>
 					<span class ="mobile-more-on-github-text">All code on my</span>
-					<button onclick="openGitHub()"><iconify-icon icon="akar-icons:github-fill" width="60" height="60"></iconify-icon>GitHub</button>
+					<button onclick="openGitHub()"><span class="iconify" data-icon="akar-icons:github-fill"></span>GitHub</button>
 					<span>.</span>
 				</div>
 			</div>
@@ -249,9 +252,8 @@
 		<section id="education">
 			<h1 class="title" data-aos="fade-up">Education</h1>
 			<div class="education-desc" data-aos="fade-up">
-				<img src="images/wpi_logo.png" alt="Image of WPI Logo"/>
+				<img class="education-pic" src="images/wpi_logo.png" alt="Image of WPI Logo"/>
 				<div class="education-text">
-					<!-- figure out how to format this without making it ugly -->
 					<h1>Worcester Polytechnic Institute</h1>
 					<h1>Bachelor of Science in Computer Science (2024)</h1>
 					<h2>GPA 3.92/4.0</h2>
@@ -263,7 +265,7 @@
 							Minor in data science
 						</li>
 						<li>
-							Dean's List every term so far
+							Dean's List every term
 						</li>
 					</ul>
 				</div>
@@ -281,38 +283,39 @@
 					<li data-aos="fade-left">
 						<div class="contact-card" onclick="openGitHub()" onmouseup="javascript: document.activeElement.blur()">
 							<h1>Github</h1>
-							<iconify-icon icon="akar-icons:github-fill" width="100" height="100"></iconify-icon>
+							<span class="iconify" data-icon="akar-icons:github-fill"></span>
 							<h1>wduf</h1>
 						</div>
 					</li>
 					<li data-aos="fade-left" data-aos-delay="100">
 						<div class="contact-card" onclick="openLinkedIn()">
 							<h1>LinkedIn</h1>
-							<iconify-icon icon="akar-icons:linkedin-box-fill" width="100" height="100"></iconify-icon>
+							<span class="iconify" data-icon="akar-icons:linkedin-box-fill"></span>
 							<h1>willdufault</h1>
 						</div>
 					</li>
 					<li data-aos="fade-left" data-aos-delay="200">
 						<div class="contact-card" onclick="copyEmail()"">
 							<h1>Email</h1>
-							<iconify-icon icon="fontisto:email" width="100" height="100"></iconify-icon>
+							<span class="iconify" data-icon="fontisto:email"></span>
 							<h1>wduf02@gmail.com</h1>
 						</div>
 					</li>
 				</ul>
 			</div>
 		</section>
-		</section>
 		<section id="footer">
 			<div class="footer-content">
 				<button class="source-code-button" onclick="openSourceCode()">Source Code</button>
-				<a class="top-page-button" href="#"><iconify-icon icon="fa-solid:caret-square-up" width="50"></iconify-icon></a>
+				<div class="top-page-button">
+					<a href="#"><span class="iconify" data-icon="fa-solid:caret-square-up"></span></a>
+				</div>
 			</div>
 		</section>
 	</body>
-	<script type="text/javascript" src="script.js"></script>
+	<script src="main.js"></script>
 	<!-- iconify -->
-	<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+	<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 	<!-- data-aos -->
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
