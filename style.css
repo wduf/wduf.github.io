@@ -1182,6 +1182,21 @@ svg
 
 /* mobile support to 320px */
 
+@media(max-width: 1350px)
+{
+	.more-on-github-text
+	{
+		display: none;
+	}
+
+	.mobile-more-on-github-text
+	{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+}
+
 @media(max-width: 1100px)
 {
 	.about-desc-wrapper
@@ -1218,18 +1233,6 @@ svg
 		-webkit-box-pack: center;
 		    -ms-flex-pack: center;
 		        justify-content: center;
-	}
-
-	.more-on-github-text
-	{
-		display: none;
-	}
-
-	.mobile-more-on-github-text
-	{
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
 	}
 }
 
