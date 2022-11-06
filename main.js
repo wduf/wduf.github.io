@@ -1,6 +1,6 @@
 function openGitHub()
 {
-	window.open('https://github.com/wduf?tab=repositories');
+	window.open('https://github.com/wduf');
 }
 
 function openLinkedIn()
