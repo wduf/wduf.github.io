@@ -8,6 +8,16 @@ function openLinkedIn()
 	window.open('https://www.linkedin.com/in/willdufault');
 }
 
+function openIDSV()
+{
+	window.open('https://wduf.github.io/interactive-data-structure-visualizer');
+}
+
+function openFullscreenClock()
+{
+	window.open('https://wduf.github.io/fullscreen-clock');
+}
+
 function copyEmail()
 {
 	navigator.clipboard.writeText('wduf02@gmail.com').then(

@@ -361,6 +361,29 @@ svg
 	width: 100%;
 }
 
+.live-button
+{
+	display: inline-flex;
+	align-items: center;
+	font-size: 24px;
+	cursor: pointer;
+	margin-top: 10px;
+	padding: 3px 6px;
+	border-radius: 10px;
+	color: white;
+	border: solid white 2px;
+	background-color: #171717;
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.live-button:hover
+{
+	color: red; 
+	background-color: white;
+}
+
 .made-with-list
 {
 	display: -webkit-box;
@@ -746,6 +769,11 @@ svg
 		font-size: 44px;
 	}
 
+	.live-button
+	{
+		font-size: 36px;
+	}
+
 	.made-with-list h1
 	{
 		font-size: 36px;
@@ -909,6 +937,11 @@ svg
 	.project-desc h1
 	{
 		font-size: 56px;
+	}	
+
+	.live-button
+	{
+		font-size: 44px;
 	}
 
 	.made-with-list h1

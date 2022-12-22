@@ -38,7 +38,7 @@
 						</li>
 						<li>
 							<!-- target blank will work only if the browser settings allow for it -->
-							<a href="WillDufault-Resume-Dec22.pdf" target="_blank">Resume</a>
+							<a href="WillDufault-Resume-Dec22-2.pdf" target="_blank">Resume</a>
 						</li>
 					</ul>
 				</div>
@@ -69,7 +69,7 @@
 								</li>
 								<li>
 									<!-- target blank will work only if the browser settings allow for it -->
-									<a href="WillDufault-Resume-Dec22.pdf" target="_blank">Resume</a>
+									<a href="WillDufault-Resume-Dec22-2.pdf" target="_blank">Resume</a>
 								</li>
 							</ul>
 						</div>
@@ -119,9 +119,36 @@
 			<h1 class="title" data-aos="fade-up">Projects</h1>
 			<div class="projects-list">
 				<div class="project" data-aos="fade-up">
+					<img class="project-pic" src="images/punchender.png" alt="Screenshot of Punchender Crowdfunding Site"/>
+					<div class="project-desc">
+						<h1>Punchender</h1>
+						<div class="made-with-list">
+							<h1>Made with:</h1>
+							<ul>
+								<li>
+									<img src="images/react-logo.png" alt="Image of React Logo"/>
+								</li>
+								<li>
+									<img src="images/aws-logo.png" alt="Image of AWS Logo"/>
+								</li>
+								<li>
+									<img src="images/mysql-logo.png" alt="Image of MySQL Logo"/>
+								</li>
+							</ul>
+						</div>
+						<p>
+							In a group of four, we created a fully functioning crowdfunding site with three roles: designer, supporter, and admin. Designers can
+							create projects and pledges, supporters can fund projects and claim pledges, and admins can delete and reap old projects. We used 
+							React with axios to call our AWS Lambda functions through our REST-based API on API Gateway. All information was stored in a MySQL 
+							database through RDS.
+						</p>
+					</div>
+				</div>
+				<div class="project" data-aos="fade-up">
 					<img class="project-pic" src="images/interactive-data-structure-visualizer.png" alt="Screenshot of Interactive Data Structure Visualizer"/>
 					<div class="project-desc">
-						<h1>Interactive Data Structure Visualizer (<a href="https://wduf.github.io/interactive-data-structure-visualizer/" target="_blank">Link</a>)</h1>
+						<h1>Interactive Data Structure Visualizer</span></h1>
+						<button class="live-button" onclick="openIDSV()"><span class="iconify" data-icon="lucide:external-link"></span>&nbsp;Live</button>
 						<div class="made-with-list">
 							<h1>Made with:</h1>
 							<ul>
@@ -182,6 +209,34 @@
 							including linear regression, random forest regression, and k-nearest neighbors, all combined with principal component analysis and a 
 							grid search to find the optimal hyperparameters
 						.</p>
+					</div>
+				</div>
+				<div class="project" data-aos="fade-up">
+					<img class="project-pic" src="images/fullscreen-clock.png" alt="Screenshot of Customizable Fullscreen Clock"/>
+					<div class="project-desc">
+						<h1>Customizable Fullscreen Clock</h1>
+						<button class="live-button" onclick="openFullscreenClock()"><span class="iconify" data-icon="lucide:external-link"></span>&nbsp;Live</button>
+						<div class="made-with-list">
+							<h1>Made with:</h1>
+							<ul>
+								<li>
+									<img src="images/html-logo.png" alt="Image of HTML Logo"/>
+								</li>
+								<li>
+									<img src="images/css-logo.png" alt="Image of CSS Logo"/>
+								</li>
+								<li>
+									<img src="images/js-logo.png" alt="Image of JavaScript Logo"/>
+								</li>
+							</ul>
+						</div>
+						<p>
+							I've been using 
+							<a href="https://www.nayuki.io/res/full-screen-clock-javascript/full-screen-clock-12hr.html" target="_blank">this clock</a> for a 
+							few months now, but I always wished there was customization. So, I decided to make my own. My fullscreen clock does the same thing 
+							that nayuki's clock does, but with some customization options, including font, font size, font color, background color, and the 
+							ability to show/hide the leading zero and period (am/pm). 
+						</p>
 					</div>
 				</div>
 				<div class="more-on-github" data-aos="fade-up">
@@ -268,7 +323,7 @@
 				<div class="education-text">
 					<h1>Worcester Polytechnic Institute</h1>
 					<h1>Bachelor of Science in Computer Science (2024)</h1>
-					<h2>GPA 3.92/4.0</h2>
+					<h2>GPA 3.9/4.0</h2>
 					<ul>
 						<li>
 							Major in computer science
@@ -327,7 +382,7 @@
 	</body>
 	<script src="main.js"></script>
 	<!-- iconify -->
-	<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+	<script src="https://code.iconify.design/3/3.0.1/iconify.min.js"></script>
 	<!-- data-aos -->
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
