@@ -35,7 +35,7 @@ function copyEmail()
 
 function openSourceCode()
 {
-	window.open("https://github.com/wduf/wduf.github.io/tree/stable");
+	window.open("https://github.com/wduf/wduf.github.io");
 }
 
 function openMenu()
